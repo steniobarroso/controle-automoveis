@@ -1,0 +1,348 @@
+{
+  "info": {
+    "_postman_id": "75b1ee2a-e0fe-405e-96ec-c08960f0af78",
+    "name": "avaliacao",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6265170",
+    "_collection_link": "https://go.postman.co/collection/6265170-75b1ee2a-e0fe-405e-96ec-c08960f0af78?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:3000/vehicles",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"plate\": \"ABC-1236\",\r\n  \"color\": \"Preto\",\r\n  \"brand\": \"Ford\"  \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/vehicles",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "vehicles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/vehicles/a4c7d3ef-a2e5-491b-aa42-37b25cc7b650",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/vehicles/67da1e77-f6d2-4e8d-a20e-93192a9f9ac0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "vehicles",
+            "67da1e77-f6d2-4e8d-a20e-93192a9f9ac0"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/vehicles/",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/vehicles/?color=Preto&brand=Fiat",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "vehicles",
+            ""
+          ],
+          "query": [
+            {
+              "key": "color",
+              "value": "Preto"
+            },
+            {
+              "key": "brand",
+              "value": "Fiat"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/vehicles/9ffb90b8-c770-434c-8e4d-566e6e34595b",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"plate\": \"ABC-1235\",\r\n  \"color\": \"Branco\",\r\n  \"brand\": \"Fiat\",\r\n  \"isEnable\":\"true\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/vehicles/9ffb90b8-c770-434c-8e4d-566e6e34595b",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "vehicles",
+            "9ffb90b8-c770-434c-8e4d-566e6e34595b"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/vehicles/a4c7d3ef-a2e5-491b-aa42-37b25cc7b650",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/vehicles/67da1e77-f6d2-4e8d-a20e-93192a9f9ac0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "vehicles",
+            "67da1e77-f6d2-4e8d-a20e-93192a9f9ac0"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/drivers",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Mario Andrade\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/drivers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "drivers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/drivers/a1523727-2ec1-4a92-ae27-2529ff2b12b2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/drivers/ce4f8598-f9a6-4d9a-a107-c16e838955e8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "drivers",
+            "ce4f8598-f9a6-4d9a-a107-c16e838955e8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/drivers/",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/drivers/?name=andrade",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "drivers",
+            ""
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "andrade"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/drivers/a1523727-2ec1-4a92-ae27-2529ff2b12b2",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Carlos Andrade Araujo\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/drivers/a1523727-2ec1-4a92-ae27-2529ff2b12b2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "drivers",
+            "a1523727-2ec1-4a92-ae27-2529ff2b12b2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/drivers/a1523727-2ec1-4a92-ae27-2529ff2b12b2",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/drivers/a1523727-2ec1-4a92-ae27-2529ff2b12b2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "drivers",
+            "a1523727-2ec1-4a92-ae27-2529ff2b12b2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/usages",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"vehicleId\": \"7c0fd095-8fa1-4fe1-86e8-7a6223ec3538\",\r\n  \"driverId\": \"1b850273-c2dc-42c6-b0e7-656e72975d9a\",\r\n  \"reason\": \"Viagem a trabalho\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/usages",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "usages"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/usages/f06ce877-c033-4854-b833-436f61849d79/finish",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/usages/f06ce877-c033-4854-b833-436f61849d79/finish",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "usages",
+            "f06ce877-c033-4854-b833-436f61849d79",
+            "finish"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/usages/",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/usages/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "usages",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
